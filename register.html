@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fonts.css">
+        <title>Registeration</title>
+    </head>
+
+    <body class="mybox">
+
+        <div class="container1">
+            <!-- <h3>Register Yourself</h3> -->
+            <div class="form" id="form">
+                <!-- form front -->
+                <div class="form-front">
+                    <!-- form left side -->
+                    <div class="left text-center"><br>
+                        <div class="title1">Are you a new user?</div>
+                        <button class="btn2" onclick="flip()">SIGN UP</button>
+                    </div>
+                    <!-- form right side -->
+                    <form action="reg.php" method="POST">
+                        <div class="right text-center">
+                            <input type="email" name="email" placeholder="Email" required><br><br>
+                            <input type="password" name="password" placeholder="Password" required><br><br>
+                            <input type="submit" class="btn1" name="login" value="LOGIN"><br><br><br>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- form front end -->
+                <!-- ************************************************************************************ -->
+                <!-- form back -->
+                <div class="form-back">
+                    <!-- form left side -->
+                    <div class="left text-center"><br>
+                        <div class="title2 pb-3">Already have an account?</div>
+                        <button class="btn2" onclick="flip1()">LOGIN</button>
+                    </div>
+                    <!-- form right side -->
+                    <form action="reg.php" method="POST">
+                        <div class="right text-center">
+                            <input type="text" name="username" placeholder="Name" required><br><br>
+                            <input type="text" name="email" placeholder="Email" required><br><br>
+                            <input type="password" name="password" placeholder="Password" required><br><br>
+                            <input type="password" name="cpassword" placeholder="confirm password" required><br><br>
+                            <input type="submit" class="btn1" name="signup" value="SIGN UP">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- form back end-->
+        </div>
+
+        </div>
+        <script type="text/javascript" src="boostrap/js/jquery.js"></script>
+        <script type="text/javascript" src="boostrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+        <script>
+            function flip() {
+                document.getElementById("form").style.
+                    transform = 'rotateY(180deg)';
+            }
+            function flip1() {
+                document.getElementById("form").style.
+                    transform = 'rotateY(0deg)';
+            }
+        </script>
+    </body>
+
+</html>
